@@ -1,8 +1,8 @@
 import * as esbuild from 'esbuild-wasm';
 import ReactDOM from "react-dom";
 import {useState, useEffect, useRef} from "react";
-import {unpkgPathPlugin} from "./plugins/unpkg-path-plugin";
-import {fetchPlugin} from "./plugins/fetch-plugin";
+import {unpkgPathPlugin} from "./bundler/plugins/unpkg-path-plugin";
+import {fetchPlugin} from "./bundler/plugins/fetch-plugin";
 
 const App = () => {
     const ref = useRef<any>();
